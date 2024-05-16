@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-section img {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+			object-fit: cover;
+        }
+        .profile-section .profile-name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .schedule-section {
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .time-slot {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #50C9C3;
+            border-radius: 5px;
+            color: #50C9C3;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .time-slot:hover {
+            background-color: #50C9C3;
+            color: #fff;
+        }
+        .time-slot.disabled {
+            border-color: #ddd;
+            color: #ddd;
+            cursor: not-allowed;
+        }
+        .time-slot.disabled:hover {
+            background-color: #fff;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-section">
+        <img src="nop.jpg" alt="Profile Picture">
+        <div class="profile-name">R.H. Garay</div>
+    </div>
+    <div class="schedule-section">
+        <div class="time-slot disabled">09:00</div>
+        <div class="time-slot">09:30</div>
+        <div class="time-slot">10:00</div>
+        <div class="time-slot">10:30</div>
+        <div class="time-slot">11:00</div>
+        <div class="time-slot">11:30</div>
+        <div class="time-slot disabled">12:00</div>
+        <div class="time-slot">13:00</div>
+        <div class="time-slot">13:30</div>
+        <div class="time-slot">14:00</div>
+        <div class="time-slot disabled">14:30</div>
+        <div class="time-slot">15:00</div>
+        <div class="time-slot disabled">15:30</div>
+        <div class="time-slot">16:00</div>
+        <div class="time-slot">16:30</div>
+        <div class="time-slot">17:00</div>
+    </div>
+</body>
+</html>
